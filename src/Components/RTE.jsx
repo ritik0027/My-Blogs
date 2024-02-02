@@ -18,6 +18,7 @@ export default function RTE({ name, control, label, defaultValue = "" }) {
 
           <Editor
             // onInit={(evt, editor) => editorRef.current = editor}
+            apiKey='861vid2j1ex45liy65r21vxbol833ntq6rpzyw27s800jy1p'
             initialValue={defaultValue}
             init={{
               height: 500,
