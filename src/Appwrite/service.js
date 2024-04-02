@@ -15,11 +15,6 @@ export class DatabaseService{
         this.storage= new Storage(this.client)
     }
 
-    /*
-     const promise = databases
-                .createDocument('[DATABASE_ID]', '[COLLECTION_ID]', '[DOCUMENT_ID]', {})
-                slug is used here as document di
-    */
 
     async createPost({title, slug, userId, content, featuredImage, status}){
 
@@ -104,8 +99,6 @@ export class DatabaseService{
             console.log("service.js::getPost::error", error);
         }
     }
-
-    //file handling from now---we need to define createFIle, deleteFile, getPreview
 
     async uploadFile(file){
         try {

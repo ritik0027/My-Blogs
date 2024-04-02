@@ -26,14 +26,7 @@ const login= async(data) =>{
         const session= await authService.login(data);
         console.log("session", session)
         if(session){
-         
-            // const userData= await authService.getCurrentUser()
-            // console.log("user found")
-            // if(userData) {
-            //   dispatch(storeLogin(userData))
-            // navigate("/")
-            // }
-
+  
             authService.getCurrentUser().
             then((userData) => {
               console.log("userdata from login", userData);
@@ -100,7 +93,7 @@ if (loader) return <div>Looged In Successfully</div>
             <Input
             type= "password"
             label= "Password: "
-            placeholder= "bhai Enter the Password"
+            placeholder= "Enter the Password"
             
             {...register("password", {
               required: true,
