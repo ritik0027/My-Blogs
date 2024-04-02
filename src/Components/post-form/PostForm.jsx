@@ -8,7 +8,6 @@ import { useSelector } from 'react-redux'
 
 
 function PostForm({ post }) {
-    // console.log("Post from postform comp:: ", post);
 
     const slugTransform = useCallback((value) => {
         if (value && typeof (value) === "string")
@@ -16,10 +15,7 @@ function PostForm({ post }) {
                 .toLowerCase()
                 .replace(/[^a-zA-Z\d\s]+/g, "-")
                 .replace(/\s/g, "-");
-                // .replace(/^[a-zA-Z\d\s]+/g, '-')
-                // .replace(/\s/g, '-')           // Replace non-word, non-digits, space characters with hyphen
-                // .replace(/[\s]+/g, '-')              // Replace consecutive spaces with a single hyphen
-                // .replace(/[-]+/g, '-');
+               
 
         return "";
     }, [])
@@ -39,7 +35,6 @@ function PostForm({ post }) {
     const navigate = useNavigate()
 
     const submit = async (data) => {
-        // console.log("Post from postform comp:: after submit ::  ", post);
         console.log("userData : ", userData);
         if (post) {
             const file = data.image[0] ?

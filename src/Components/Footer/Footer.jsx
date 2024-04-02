@@ -32,7 +32,3 @@ function Footer() {
 }
 
 export default Footer
-
-
-
-/*ToDO :- Add foooter Components from md file */
