@@ -1,6 +1,6 @@
-# Welcome to MyBlog App 📝
+# Welcome to My Blogs App 📝
 
-MyBlog App is a modern blogging platform built with ReactJS and Tailwind CSS, powered by Appwrite as a backend service for authentication, database, and storage. Users can sign up or log in using their email ID and password, create posts, view all posts, and enjoy a real-time editor powered by TinyMCE.
+My Blogs App is a modern blogging platform built with ReactJS and Tailwind CSS, powered by Appwrite as a backend service for authentication, database, and storage. Users can sign up or log in using their email ID and password, create posts, view all posts, and enjoy a real-time editor powered by TinyMCE.
 
 ## Features
 
