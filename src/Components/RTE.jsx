@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { Editor } from "@tinymce/tinymce-react";
 import { Controller } from 'react-hook-form'
 
-export default function RTE({ name, control, label, defaultValue = "" }) {
+export default function RTE({ name, control, label, defaultValue = "Welcome To TinyM" }) {
 
 
   return (
@@ -17,7 +17,7 @@ export default function RTE({ name, control, label, defaultValue = "" }) {
         render={({ field: { onChange } }) => (
 
           <Editor
-            apiKey='861vid2j1ex45liy65r21vxbol833ntq6rpzyw27s800jy1p'
+            apiKey='nkd1ut2keszrnj7c8vm2itoqkjwohso4gr4stlcda435l3d0'
             initialValue={defaultValue}
             init={{
               height: 500,
