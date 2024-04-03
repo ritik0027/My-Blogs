@@ -14,7 +14,7 @@ function Home() {
                     <div className="max-w-md">
                         <h1 className="mb-5 text-5xl font-bold">Welcome !!</h1>
                         <p className="mb-5">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sunt praesentium doloremque similique natus quo. At nesciunt earum veritatis excepturi enim assumenda debitis a saepe commodi. Eligendi illum doloremque perferendis?
+                        Welcome to My Blogs App, your ultimate platform for expressing and sharing your thoughts with the world! Whether you're an aspiring writer, a seasoned blogger, or simply looking to connect with like-minded individuals, our platform provides the perfect space for you to create, publish, and engage with captivating content. With user-friendly features, seamless navigation, and a vibrant community, My Blogs App empowers you to unleash your creativity and make your voice heard. Join us today and embark on a journey of inspiration, discovery, and endless possibilities in the world of blogging.
                         </p>
                         <Link
                          to={'/login'}

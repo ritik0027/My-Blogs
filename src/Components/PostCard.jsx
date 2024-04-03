@@ -1,8 +1,9 @@
 import React from 'react'
 import databaseService from '../Appwrite/service'
 import { Link } from 'react-router-dom'
+import parse from "html-react-parser";
 
-function PostCard({ $id, title, featuredImage }) {
+function PostCard({ $id, title, featuredImage,content }) {
   return (
     <Link to={`/post/${$id}`}>
      
@@ -17,7 +18,7 @@ function PostCard({ $id, title, featuredImage }) {
   src={databaseService.getFilePreview(featuredImage)} alt={title}/></figure>
   <div className="card-body">
     <h2 className="card-title">{title}</h2>
-    <p>How to park your car at your garage?</p>
+    <p> {parse(String(content))}</p>
     <div className="card-actions justify-end">
       <button className="btn btn-primary">Read Article!</button>
     </div>

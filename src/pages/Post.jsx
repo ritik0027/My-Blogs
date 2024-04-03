@@ -12,24 +12,18 @@ function Post() {
   const { slug } = useParams()
   const userData = useSelector((state) => state.userData)
   const isAuthor = post && userData ? (post.userId === userData.$id) : (false);
-  // console.log(post.featuredImage);
-
-  // console.log("slug is: ", slug);
+ 
 
   useEffect(() => {
-    // console.log("slug obtained from url: ", slug)
     if (slug) {
-      // console.log("slug found :: ", slug);
       databaseService.getPost(slug).then((post) => {
         if (post) {
           setPost(post)
-          // console.log("post found :: ", post)
         } else {
           navigate('/')
         }
       }).finally(setLoader(false))
     } else {
-      // console.log("slug not found ********");
       navigate('/')
     }
   }, [slug, navigate])

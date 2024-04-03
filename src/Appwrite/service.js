@@ -8,8 +8,8 @@ export class DatabaseService{
     storage;
     constructor(){
         this.client
-        .setEndpoint(config.AppwriteUrl) // Your API Endpoint
-        .setProject(config.ProjectId); //Will make connection to the appwrite services
+        .setEndpoint(config.AppwriteUrl)
+        .setProject(config.ProjectId); 
 
         this.databases= new Databases(this.client)
         this.storage= new Storage(this.client)
@@ -43,7 +43,6 @@ export class DatabaseService{
     async updatePost(slug, {title, content, featuredImage, status}){
 
             try {
-                
                 return await this.databases.updateDocument(
                     config.databaseId,
                     config.collectionId,

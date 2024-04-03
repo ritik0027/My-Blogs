@@ -4,5 +4,4 @@ import AuthSlice from './AuthSlice'
 const store= configureStore({
     reducer: AuthSlice
 })
-
 export default store
