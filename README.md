@@ -42,7 +42,7 @@ To get started with MyBlog App, follow these simple steps:
 4. **Run the Application**: Once dependencies are installed and configuration is done, you can run the application locally using npm:
 
     ```bash
-    npm start
+    npm run dev
     ```
 
 5. **Access the Application**: Open your web browser and navigate to `http://localhost` to access MyBlog App.
